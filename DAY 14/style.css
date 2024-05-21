@@ -85,13 +85,13 @@ body {
     background-color: #ff9500;
 }
 
-/* Media Queries */
+/*======== Media Queries ========*/
 
-/* Small devices (portrait phones, 320px and up) */
+/*======== Small devices (portrait phones, 320px and up) ========*/
 @media only screen and (max-width: 320px) and (orientation: portrait) {
     .calculator {
         width: 90%;
-        max-width: 300px; /* Limit maximum width for smaller portrait screens */
+        max-width: 300px; 
     }
 
     .display {
@@ -105,7 +105,7 @@ body {
     }
 }
 
-/* Small devices (landscape phones, 576px and up) */
+/*======== Small devices (landscape phones, 576px and up) ========*/
 @media only screen and (max-width: 576px) and (orientation: landscape) {
     .display {
         font-size: 2em;
@@ -118,7 +118,7 @@ body {
     }
 }
 
-/* Medium devices (tablets, 768px and up) */
+/*======== Medium devices (tablets, 768px and up) ========*/
 @media (max-width: 768px) {
     .display {
         font-size: 2.2em;
@@ -131,7 +131,7 @@ body {
     }
 }
 
-/* Large devices (desktops, 992px and up) */
+/*======== Large devices (desktops, 992px and up) ========*/
 @media (max-width: 992px) {
     .display {
         font-size: 2.3em;
@@ -144,7 +144,7 @@ body {
     }
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
+/*======== Extra large devices (large desktops, 1200px and up) ========*/
 @media (min-width: 1200px) {
     .display {
         font-size: 2.5em;
