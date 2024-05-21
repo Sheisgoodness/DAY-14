@@ -1,0 +1,158 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #111;
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.calculator {
+    width: 380px;
+    background-color: #000;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    padding: 20px;
+}
+
+.display {
+    font-size: 2.5em;
+    color: #fff;
+    text-align: right;
+    padding: 20px;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    font-size: 1.2em;
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number {
+    background-color: #4a4a4a;
+    color: #fff;
+}
+
+.function {
+    background-color: #6d6d6d;
+    color: #fff;
+}
+
+.operator {
+    background-color: #ff8400;
+    color: #fff;
+}
+
+.equal {
+    background-color: #ff8400;
+    color: #fff;
+    grid-column: span 2;
+    border-radius: 50px; 
+}
+
+.zero {
+    grid-column: span 2; 
+    background-color: #4a4a4a;
+    width: 200px;
+    color: #fff;
+    border-radius: 50px; 
+}
+
+.btn:hover {
+    background-color: #6d6d6d;
+}
+
+.operator:hover, .equal:hover {
+    background-color: #ff9500;
+}
+
+/* Media Queries */
+
+/* Small devices (portrait phones, 320px and up) */
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+    .calculator {
+        width: 90%;
+        max-width: 300px; /* Limit maximum width for smaller portrait screens */
+    }
+
+    .display {
+        font-size: 1.8em;
+        padding: 12px;
+    }
+
+    .btn {
+        font-size: 0.9em;
+        padding: 15px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (max-width: 576px) and (orientation: landscape) {
+    .display {
+        font-size: 2em;
+        padding: 15px;
+    }
+
+    .btn {
+        font-size: 1em;
+        padding: 15px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    .display {
+        font-size: 2.2em;
+        padding: 18px;
+    }
+
+    .btn {
+        font-size: 1.1em;
+        padding: 18px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+    .display {
+        font-size: 2.3em;
+        padding: 20px;
+    }
+
+    .btn {
+        font-size: 1.2em;
+        padding: 18px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .display {
+        font-size: 2.5em;
+        padding: 20px;
+    }
+
+    .btn {
+        font-size: 1.2em;
+        padding: 20px;
+    }
+}
